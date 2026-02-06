@@ -35,7 +35,12 @@ const AccountModel = useDatabase ? mongoose.model('Account', accountSchema) : nu
 const app = express()
 const port = process.env.PORT || 4000
 
-app.use(cors())
+app.use(
+  cors({
+    origin: ['http://localhost:5173', 'https://money-manager-eta-one.vercel.app'],
+    credentials: true,
+  }),
+)
 app.use(express.json())
 
 let accounts = [
@@ -177,7 +182,7 @@ app.patch('/api/transactions/:id', async (req, res) => {
 const start = async () => {
   await connectDb()
   app.listen(port, () => {
-    console.log(`API running on http://localhost:${port}`)
+    console.log(`API running on port ${port}`)
   })
 }
 

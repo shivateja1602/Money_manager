@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://money-manager-a6jx.onrender.com/api'
 
 const jsonHeaders = {
   'Content-Type': 'application/json',
