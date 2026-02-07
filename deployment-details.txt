@@ -1,0 +1,13 @@
+Project Name: Money Manager
+
+GitHub Repository URL:
+https://github.com/shivateja1602/Money_manager
+
+Frontend Live URL (Vercel):
+https://money-manager-eta-one.vercel.app/
+
+Backend Live URL (Render):
+https://money-manager-a6jx.onrender.com
+
+Last Commit Hash ID:
+5e062163eedba0069b23e3fa114a0030bd4d40e8
